@@ -13,12 +13,21 @@
 
 <header class="nav" id="siteNav">
   <div class="nav-inner">
-    <a href="#hero" class="logo">Portfolio.</a>
+    <a href="#hero" class="logo">My Portfolio</a>
     <ul class="menu">
       <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About Me</a></li>
+      <li class="menu-item has-dropdown">
+        <a href="#about">About Me</a>
+        <ul class="dropdown">
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skill</a></li>
+        </ul>
+      </li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#project">Project</a></li>
-      <li><a href="#contact">Contract</a></li>
+      <li><a href="#certificate">Certificate</a></li>
+      <li><a href="#contact">Contact</a></li>
+
     </ul>
   </div>
 </header>
@@ -30,6 +39,8 @@
   <a href="#skills" class="dot-link" data-target="skills"></a>
   <a href="#experience" class="dot-link" data-target="experience"></a>
   <a href="#project" class="dot-link" data-target="project"></a>
+  <a href="#certificate" class="dot-link" data-target="certificate"></a>
+  <a href="#contact" class="dot-link" data-target="contact"></a>
 </nav>
 
 <div class="scroller" id="scroller">
@@ -39,7 +50,6 @@
     <div class="page-inner">
       <p class="micro-label">Portfolio — 2026</p>
       <h1 class="hero-heading">My Portfolio.</h1>
-      <p class="hero-blurb">นักศึกษาคณะบริหารธุรกิจ สาขานวัตกรรมธุรกิจดิจิทัล มหาวิทยาลัยแม่โจ้ ที่หลงใหลในการวิเคราะห์ข้อมูลและสร้างสรรค์โปรเจกต์เชิงนวัตกรรม</p>
       <div class="placeholder-block hero-image">1280 × 560</div>
     </div>
   </section>
@@ -49,70 +59,84 @@
   <!-- ABOUT ME -->
   <section class="page" id="about">
     <div class="page-inner">
-      <p class="section-label">About Me</p>
-      <h2 class="about-heading">Hi, I'm Narawit Kantasa</h2>
-      <p class="about-paragraph">สวัสดีครับผม นาย นราวิชญ์ ขันทะสา นักศึกษาชั้นปีที่ 4 คณะบริหารธุรกิจ สาขานวัตกรรมธุรกิจดิจิทัล มหาวิทยาลัยแม่โจ้ 
-        มีความสนใจด้าน Data Analysis, Business Intelligence การบริหารจัดการโปรเจกต์ และ AI automation
-        มีประสบการณ์ด้านการรวบรวมข้อมูลแบบสอบถามGoogle Forms ในเชียงใหม่ และการทำงานกลุ่มร่วมพัฒนาโปรเจกต์ด้านเทคโนโลยีและนวัตกรรมทางธุรกิจมาแล้วหลายโครงการ
-      </p>
-
+      <div class="about-layout">
+        <div class="about-content">
+          <p class="section-label">About Me</p>
+          <h2 class="about-heading">Hi, ผม นาย นราวิชญ์ ขันทะสา</h2>
+          <p class="about-paragraph">นักศึกษาชั้นปีที่ 4 คณะบริหารธุรกิจ สาขานวัตกรรมธุรกิจดิจิทัล มหาวิทยาลัยแม่โจ้
+            มีความสนใจด้าน Data Analysis, Business Intelligence การบริหารจัดการโปรเจกต์ และ AI automation
+            มีประสบการณ์ด้านการรวบรวมข้อมูลแบบสอบถามGoogle Forms ในเชียงใหม่ และการทำงานกลุ่มร่วมพัฒนาโปรเจกต์ด้านเทคโนโลยีและนวัตกรรมทางธุรกิจมาแล้วหลายโครงการ
+          </p>
+        </div>
+        <div class="placeholder-block about-photo">300x300</div>
+      </div>
     </div>
   </section>
 
   <div class="divider"></div>
 
-  <!-- EDUCATION & CONTACT -->
+  <!-- EDUCATION -->
   <section class="page" id="education">
-    <div class="page-inner two-col" id="contact">
-      <div>
-        <p class="section-label">Education</p>
-        <h3>มหาวิทยาลัยแม่โจ้</h3>
-        <p>คณะบริหารธุรกิจ สาขานวัตกรรมธุรกิจดิจิทัล</p>
-        <p>ชั้นปีที่ 4 · 2023–2027</p>
-      </div>
-      <div>
-        <p class="section-label">Contact</p>
-        <p class="contact-line">091-713-7762</p>
-        <p class="contact-line">aomsin3645@gmail.com</p>
-      </div>
+    <div class="page-inner">
+      <p class="section-label">Education</p>
+      <h3>โรงเรียนเซนต์ดอมินิก</h3>
+      <p>ชั้นมัธยมศึกษาปีที่ 3 · 2010–2019</p>
+      <h3>โรงเรียนวารีเชียงใหม่</h3>
+      <p>ชั้นมัธยมศึกษาปีที่ 6 · 2021–2023</p>
+      <h3>มหาวิทยาลัยแม่โจ้</h3>
+      <p>คณะบริหารธุรกิจ สาขานวัตกรรมธุรกิจดิจิทัล</p>
+      <p>ชั้นปีที่ 4 · 2023–2027</p>
     </div>
   </section>
 
   <div class="divider"></div>
 
-  <!-- SKILLS -->
+ <!-- SKILLS -->
   <section class="page" id="skills">
     <div class="page-inner">
       <p class="section-label">Skills</p>
-      <div class="skills-grid">
-        <div>
-          <h4>Hard Skill</h4>
-          <ul><li>Power BI</li><li>Looker Studio</li><li>Excel</li></ul>
+      <div class="skills-groups">
+        <div class="skill-group">
+          <p class="skill-category">Hard Skill</p>
+          <div class="skill-row">
+            <span class="skill-chip"><img src="https://cdn.simpleicons.org/n8n" alt="n8n" loading="lazy"><span>n8n (Workflow Automation)</span></span>
+            <span class="skill-chip"><img src="https://cdn.simpleicons.org/supabase" alt="Supabase" loading="lazy"><span>Supabase (Database &amp; Backend)</span></span>
+            <span class="skill-chip"><img src="https://cdn.simpleicons.org/googlegemini" alt="Gemini" loading="lazy"><span>Prompt Engineering (Gemini AI)</span></span>
+            <span class="skill-chip"><img src="https://cdn.simpleicons.org/figma" alt="Figma" loading="lazy"><span>Figma</span></span>
+          </div>
         </div>
-        <div>
-          <h4>Soft Skill</h4>
-          <ul><li>Team Management</li><li>Agile Framework</li><li>Communication</li></ul>
+        <div class="skill-group">
+          <p class="skill-category">Soft Skill</p>
+          <div class="skill-row">
+            <span class="skill-chip"><span class="skill-dot"></span><span>การทำงานเป็นทีม (Teamwork)</span></span>
+            <span class="skill-chip"><span class="skill-dot"></span><span>การปรับตัวและความยืดหยุ่น (Adaptability):</span></span>
+            <span class="skill-chip"><span class="skill-dot"></span><span>การวิเคราะห์และการแก้ปัญหา (Critical Thinking & Problem Solving)</span></span>
+          </div>
         </div>
-        <div>
-          <h4>Domain Expertise</h4>
-          <ul><li>Project Leadership</li><li>Market Research</li><li>Systems Analysis</li><li>Data Collection</li></ul>
-        </div>
-        <div>
-          <h4>Languages</h4>
-          <ul><li>Thai (Native)</li><li>English (Intermediate)</li></ul>
+      
+        <div class="skill-group">
+          <p class="skill-category">Languages</p>
+          <div class="skill-row">
+            <span class="skill-chip"><span class="skill-flag">🇹🇭</span><span>Thai (Native)</span></span>
+            <span class="skill-chip"><span class="skill-flag">🇬🇧</span><span>English (Intermediate)</span></span>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
   <div class="divider"></div>
 
-  <!-- EXPERIENCE -->
+ <!-- EXPERIENCE -->
   <section class="page" id="experience">
     <div class="page-inner">
       <p class="section-label">Experience</p>
-      <h2 class="about-heading">2025 — Sale</h2>
-      
+
+      <h3 class="experience-heading">2025 — ผู้เก็บรวบรวมข้อมูล งานวิจัยเนื้อจากพืช (Plant-Based Meat)</h3>
+      <p>ร่วมงานกับมหาวิทยาลัยขอนแก่นและมหาวิทยาลัยหาดใหญ่ รับผิดชอบการเก็บรวบรวมข้อมูลในพื้นที่ภาคเหนือ (เชียงใหม่) ผ่านแบบสอบถามออนไลน์ Google Forms</p>
+
+      <h3 class="experience-heading">2026 — ผู้เก็บรวบรวมข้อมูล งานวิจัยแนวทางส่งเสริมความเป็นผู้ประกอบการ GenZ</h3>
+      <p>ร่วมงานกับมหาวิทยาลัยขอนแก่นและมหาวิทยาลัยหาดใหญ่ รับผิดชอบการเก็บรวบรวมข้อมูลในพื้นที่ภาคเหนือ (เชียงใหม่) ผ่านแบบสอบถามออนไลน์ Google Forms</p>
+
     </div>
   </section>
 
@@ -126,19 +150,41 @@
         <div class="project-card">
           <div class="placeholder-block">Image</div>
           <div class="project-caption"><span class="idx">01</span><span class="name">AI Assistant for Line Activity Notification</span></div>
+          <p>⚙️ เครื่องที่ใช้ : Line OA + n8n & AI + Supabase + Stripe</p>
         
         </div>
         <div class="project-card">
           <div class="placeholder-block">Image</div>
-          <div class="project-caption"><span class="idx">02</span><span class="name">Smart Residential Recyclable Waste Management App</span></div>
+          <div class="project-caption"><span class="idx">02</span><span class="name">App RecycleHere</span></div>
+          <p>⚙️ เครื่องที่ใช้ : Flutterflow + Supabase + API Google Map + Looker Studio</p>
+           <p class="contact-line">Preview : <a class="contact-link" href="https://www.youtube.com/watch?v=Fp9kP706RPE" target="_blank" rel="noopener">Youtube</a>🔗</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CERTIFICATE -->
+  <section class="page" id="certificate">
+    <div class="page-inner">
+      <p class="section-label">Certificate</p>
+      <div class="project-grid">
+        <div class="project-card">
+          <img class="placeholder-block" src="image/n8n.jpg" alt="ใบรับรองอบรม n8n">
+          <div class="project-caption"><span class="idx">01</span><span class="name">อบรมหลักสูตร Ai Automation โดยโปรแกรม n8n</span></div>
+          <p>🏫 หน่วยงาน : บริษัท สเปราติง เทค (ประเทศไทย) จำกัด · 2026</p>
         </div>
         <div class="project-card">
-          <div class="placeholder-block">Image</div>
-          <div class="project-caption"><span class="idx">03</span><span class="name">Inter-University Market Research</span></div>
+          <img class="placeholder-block" src="image/make.com.jpg" alt="ใบรับรองอบรม Make.com">
+          <div class="project-caption"><span class="idx">02</span><span class="name">อบรมหลักสูตร Ai Automation โดยโปรแกรม Make.com</span></div>
+          <p>🏫 หน่วยงาน : บริษัท สเปราติง เทค (ประเทศไทย) จำกัด · 2026</p>
         </div>
-        <div class="project-card">
-          <div class="placeholder-block">Image</div>
-          <div class="project-caption"><span class="idx">04</span><span class="name">Open Data Modeling &amp; Business Intelligence Analysis</span></div>
+         <div class="project-card">
+          <div class="placeholder-block">รูปใบรับรอง</div>
+          <div class="project-caption"><span class="idx">03</span><span class="name">อบรมหลักสูตร Git และ Github</span></div>
+          <p>🏫 หน่วยงาน : บริษัท สเปราติง เทค (ประเทศไทย) จำกัด · 2026</p>
         </div>
       </div>
     </div>
@@ -146,9 +192,17 @@
 
   <div class="divider"></div>
 
-  <footer>
-    <div class="footer-inner"></div>
-  </footer>
+  <!-- CONTACT -->
+  <section class="page" id="contact">
+    <div class="page-inner">
+      <p class="section-label">Contact</p>
+      <h2 class="about-heading">Let's Connect.</h2>
+      <p class="contact-line">📞 Phone : 091-713-7762</p>
+      <p class="contact-line">📩 E-mail : narawitkantasa@gmail.com</p>
+      <p class="contact-line">💻 Github : <a class="contact-link" href="https://github.com/A1msin-lab" target="_blank" rel="noopener">A1msin-lab</a>🔗</p>
+      <p class="contact-line">💼 LinkedIn : <a class="contact-link" href="https://www.linkedin.com/in/narawit-kantasa-06aa4a429/" target="_blank" rel="noopener">Narawit Kantasa</a>🔗</p>
+    </div>
+  </section>
 
 </div>
 
