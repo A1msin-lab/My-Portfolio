@@ -13,7 +13,7 @@
 
 <header class="nav" id="siteNav">
   <div class="nav-inner">
-    <a href="#hero" class="logo">My Portfolio</a>
+    <a href="#hero" class="logo">My Portfolio.</a>
     <ul class="menu">
       <li><a href="#hero">Home</a></li>
       <li class="menu-item has-dropdown">
@@ -49,7 +49,7 @@
   <section class="page" id="hero">
     <div class="page-inner">
       <p class="micro-label">Portfolio — 2026</p>
-      <h1 class="hero-heading">My Portfolio.</h1>
+      <h1 class="hero-heading">My Portfolio</h1>
       <div class="placeholder-block hero-image">1280 × 560</div>
     </div>
   </section>
@@ -86,6 +86,7 @@
       <h3>มหาวิทยาลัยแม่โจ้</h3>
       <p>คณะบริหารธุรกิจ สาขานวัตกรรมธุรกิจดิจิทัล</p>
       <p>ชั้นปีที่ 4 · 2023–2027</p>
+      <p>เกรดเฉลี่ยสะสม (GPA) : 3.26</p>
     </div>
   </section>
 
@@ -154,7 +155,10 @@
         
         </div>
         <div class="project-card">
-          <div class="placeholder-block">Image</div>
+          <button type="button" class="project-media" data-gallery='["image/RecycleHere/login.png","image/RecycleHere/sign_up.png","image/RecycleHere/user_home_page.png","image/RecycleHere/user_infopage.png","image/RecycleHere/user_info_edit.png","image/RecycleHere/user_info_addders.png","image/RecycleHere/user_info_map.png","image/RecycleHere/item.png","image/RecycleHere/cal.png","image/RecycleHere/user_point.png","image/RecycleHere/touser.png","image/RecycleHere/admin_histroyinfo.png"]'>
+            <img class="placeholder-block" src="image/RecycleHere/user_home_page.png" alt="หน้าจอแอป RecycleHere">
+            <span class="project-media-overlay">🔍 ดูภาพหน้าจอทั้งหมด (12)</span>
+          </button>
           <div class="project-caption"><span class="idx">02</span><span class="name">App RecycleHere</span></div>
           <p>⚙️ เครื่องที่ใช้ : Flutterflow + Supabase + API Google Map + Looker Studio</p>
            <p class="contact-line">Preview : <a class="contact-link" href="https://www.youtube.com/watch?v=Fp9kP706RPE" target="_blank" rel="noopener">Youtube</a>🔗</p>
@@ -204,6 +208,18 @@
     </div>
   </section>
 
+</div>
+
+<!-- SCREENSHOT LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lightbox-backdrop" data-close></div>
+  <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="ภาพก่อนหน้า">‹</button>
+  <div class="lightbox-content">
+    <button type="button" class="lightbox-close" data-close aria-label="ปิด">✕</button>
+    <img class="lightbox-image" id="lightboxImage" src="" alt="">
+    <p class="lightbox-counter" id="lightboxCounter"></p>
+  </div>
+  <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="ภาพถัดไป">›</button>
 </div>
 
 <script src="script/main.js"></script>
