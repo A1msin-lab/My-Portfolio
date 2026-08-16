@@ -5,9 +5,26 @@ scroller.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', scroller.scrollTop > 10);
 });
 
+// Reveal-on-scroll: fade/slide each page's content in as it comes into
+// view (and back out on the way past, so it replays when scrolling back).
+// The .reveal-ready class is what switches the CSS hidden-state on, so a
+// JS failure just leaves everything visible instead of stuck invisible.
+document.documentElement.classList.add('reveal-ready');
+// threshold: 0 + a bottom rootMargin means "in-view" flips as soon as any
+// part of the section enters that zone — independent of the section's
+// total height. A ratio-based threshold (e.g. 0.2) never gets reached for
+// sections taller than the viewport (stacked cards on mobile, long text
+// blocks), so their content stayed stuck invisible while scrolling.
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    entry.target.classList.toggle('in-view', entry.isIntersecting);
+  });
+}, { root: scroller, threshold: 0, rootMargin: '0px 0px -10% 0px' });
+document.querySelectorAll('.page-inner').forEach((el) => revealObserver.observe(el));
+
 // Active dot indicator based on which "page" is in view
 const dotLinks = Array.from(document.querySelectorAll('.dot-link'));
-const pageIds = ['hero', 'about', 'education', 'skills', 'experience', 'project', 'certificate', 'contact'];
+const pageIds = ['hero', 'about', 'education', 'experience', 'project', 'certificate', 'contact'];
 const targets = pageIds.map(id => document.getElementById(id));
 
 // Track each section's visible ratio and activate the one most in view.
