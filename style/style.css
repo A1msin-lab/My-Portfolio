@@ -245,6 +245,22 @@ header.nav.scrolled{ border-bottom-color:var(--divider); }
   max-width:680px;
   margin:0;
 }
+.btn-resume{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin-top:28px;
+  padding:14px 28px;
+  background:var(--ink);
+  color:#fff;
+  font-size:14px;
+  font-weight:600;
+  letter-spacing:0.02em;
+  text-decoration:none;
+  border-radius:999px;
+  transition:opacity .2s ease, transform .2s ease;
+}
+.btn-resume:hover{ opacity:.85; transform:translateY(-1px); }
 
 /* ---------- education ---------- */
 .edu-header{
